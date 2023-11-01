@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+    tomcat:
+      init-s-q-l:
+    schema: file:db/schema.sql
+    data: file:db/data/pet.sql
+  h2:
+    console:
+      enabled: true
+  jpa:
+    show-sql: true
+    generate-ddl: false
+    hibernate:
+      ddl-auto: none
+#  sql:
+#    init:
+#      schema-locations: file:db/schema.sql
+#      data-locations: file:db/data/pet.sql

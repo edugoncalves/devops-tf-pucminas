@@ -1,0 +1,78 @@
+
+= Pet API
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 5
+:sectlinks:
+
+[introduction]
+= Introdução
+
+API Rest de demostração para
+
+
+== HTTP status codes
+
+Códigos de Status HTTP utilizados no Proxy:
+
+|===
+| Status code | Usage
+
+| `200 OK`
+| Requisição bem-sucedida
+
+| `400 Bad Request`
+| Código informado quando ocorrer um erro na validação de parâmetros
+
+| `500 Internal Server Error`
+| Código informado quando ocorrer um erro na execução dos serviços.
+|===
+
+
+[[services]]
+= Serviço
+
+
+:sectnums:
+== Busca de Pets por Id
+==== Busncando um Cachorro
+Busca um pete do tipo "CACHORRO"
+
+
+
+==== Validação de parâmetros do serviço
+
+
+*Estrutura da Resposta*
+
+include::{snippets}/devops-cenario-1/http-request.adoc[]
+
+*Requisição*
+
+include::{snippets}/devops-cenario-1/curl-request.adoc[]
+
+*Resposta*
+
+include::{snippets}/devops-cenario-1/http-response.adoc[]
+
+==== Busncando um Gato
+Busca um pete do tipo "GATO"
+
+
+
+==== Validação de parâmetros do serviço
+
+
+*Estrutura da Resposta*
+
+include::{snippets}/devops-cenario-2/http-request.adoc[]
+
+*Requisição*
+
+include::{snippets}/devops-cenario-2/curl-request.adoc[]
+
+*Resposta*
+
+include::{snippets}/devops-cenario-2/http-response.adoc[]

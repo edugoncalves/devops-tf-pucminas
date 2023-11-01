@@ -1,0 +1,9 @@
+CREATE TABLE PET (ID INTEGER AUTO_INCREMENT NOT NULL,
+                  IDADE INTEGER NOT NULL,
+                  PORTE TINYINT CHECK (PORTE BETWEEN 0 AND 2),
+                  TIPO TINYINT CHECK (TIPO BETWEEN 0 AND 1),
+                  NOME VARCHAR(255),
+                  RACA VARCHAR(255),
+                  PRIMARY KEY (ID));
+
+
